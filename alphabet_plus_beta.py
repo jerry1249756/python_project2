@@ -8,7 +8,7 @@ Created on Thu Jun  3 16:56:04 2021
 from vpython import *
 #screen = [[0 for i in range(150)]for j in range(40)]
 #screen = [[0 for i in range(5)]for j in range(8)] #for test
-screen = [[0 for i in range(13)]for j in range(24)] #for test
+screen = [[0 for i in range(87)]for j in range(24)] #for test
 
 def light(chr, line, place) :
     if chr == ' ':
@@ -3161,16 +3161,20 @@ def light(chr, line, place) :
         screen[7+8*line][4+6*place] = 0
         screen[7+8*line][5+6*place] = 0
 
-line1=input("please input line 1 ")
-length_of_line1 = len(line1)
-for i in range (length_of_line1) :
-    light(line1[i] ,0, i)
-line2=input("please input line 2 ")
-length_of_line2 = len(line2)
-for i in range (length_of_line2) :
-    light(line2[i] ,1, i)
-line3=input("please input line 3 ")
-length_of_line3 = len(line3)
-for i in range (length_of_line3) :
-    light(line3[i] ,2, i)
-print(screen)
+def main():
+    line1=input("please input line 1 ")
+    length_of_line1 = len(line1)
+    for i in range (length_of_line1) :
+        light(line1[i] ,0, i)
+    line2=input("please input line 2 ")
+    length_of_line2 = len(line2)
+    for i in range (length_of_line2) :
+        light(line2[i] ,1, i)
+    line3=input("please input line 3 ")
+    length_of_line3 = len(line3)
+    for i in range (length_of_line3) :
+        light(line3[i] ,2, i)
+    print(screen)
+
+if __name__ == '__main__':
+    main()

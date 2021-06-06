@@ -2614,8 +2614,3 @@ def light(chr, x ) :
         screen[7][3] = 0
         screen[7][4] = 0
 
-line1=input("please input line 1 ")
-length_of_line1 = len(line1)
-for i in range (length_of_line1) :
-    light(line1[i] , i)
-print(screen)
