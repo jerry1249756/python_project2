@@ -30,7 +30,7 @@ E_field = arrow(pos=vec(0,0,0), axis=vec(0,Ey,Ez), color=color.green, shaftwidth
 N=1500
 balls=[]
 for i in range (N):
-    ball = sphere(radius=1, pos=vec(-d+1.5,0,0),v=vec(v_init,0,0), color=color.red)
+    ball = sphere(radius=0.4, pos=vec(-d+1.5,0,0),v=vec(v_init,0,0), color=color.red)
     balls.append(ball)
 count=0
 
