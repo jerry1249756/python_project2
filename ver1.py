@@ -10,13 +10,10 @@ h=15 #distance between the board
 e=1.6E-19 
 m=9.11E-31
 v_init=10
-rt=1000  #rate
+rt=100  #rate
 
 def get_field(pos_y,pos_z): #return the field(E_y,E_z) needed to project to (pos_y, pos_z)
     return 2*m*v_init**2*pos_y/(e*L*(L+2*d)), 2*m*v_init**2*pos_z/(e*L*(L+2*d))
-
-def word_pos(x,y): #return the position of the character at (x,y)(x=0-9, y=0-2)
-    return 6*x+1, 9*y+1
 
 scene = canvas(width = 800, height = 600, forward=vec(-1.5,0,-1))
 upboard = box(width=L,length=L, height=0.01, pos=vec(0,h/2,0), color=color.magenta)
