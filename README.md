@@ -1,6 +1,6 @@
 # python_project2
 ## files
-alphabet_plus_beta.py
+alphabet_plus_beta.py   
 ver1.py
 
 ## usage
