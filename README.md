@@ -1,4 +1,5 @@
-# python_project2
+# python_project
+This is a final project of general physics(a)(2), 2021 spring, created by Hank, Jerry and Johnny. This project aims to simulate a CRT television by shooting electrons to the screen.
 ## files
 alphabet_plus_beta.py   
 ver1.py
